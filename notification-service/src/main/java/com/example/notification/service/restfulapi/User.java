@@ -1,15 +1,20 @@
 package com.example.notification.service.restfulapi;
 
+import jakarta.validation.constraints.Past;
+import jakarta.validation.constraints.Size;
+
 import java.time.LocalDate;
 
 public class User {
     private Integer id;
-    private String name;
+    @Size(min = 2,message = "Name should have atleast 2 characters")
+    private String username;
+    @Past(message = "Birth date should be in the past")
     private LocalDate birthDate;
 
-    public User(Integer id, String name, LocalDate birthDate) {
+    public User(Integer id, String username, LocalDate birthDate) {
         this.id = id;
-        this.name = name;
+        this.username = username;
         this.birthDate = birthDate;
     }
 
@@ -21,12 +26,12 @@ public class User {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getusername() {
+        return username;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setusername(String username) {
+        this.username = username;
     }
 
     public LocalDate getBirthDate() {
@@ -41,7 +46,7 @@ public class User {
     public String toString() {
         return "User{" +
                 "id=" + id +
-                ", name='" + name + '\'' +
+                ", username='" + username + '\'' +
                 ", birthDate=" + birthDate +
                 '}';
     }
