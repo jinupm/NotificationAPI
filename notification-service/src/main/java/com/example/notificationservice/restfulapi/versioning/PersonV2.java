@@ -1,4 +1,4 @@
-package com.example.notification.service.restfulapi.versioning;
+package com.example.notificationservice.restfulapi.versioning;
 
 public class PersonV2 {
     private Name name;

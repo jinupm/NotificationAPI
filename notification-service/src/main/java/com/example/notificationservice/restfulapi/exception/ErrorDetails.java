@@ -1,4 +1,4 @@
-package com.example.notification.service.restfulapi.exception;
+package com.example.notificationservice.restfulapi.exception;
 
 import java.time.LocalDateTime;
 

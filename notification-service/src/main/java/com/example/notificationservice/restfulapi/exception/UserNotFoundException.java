@@ -1,4 +1,4 @@
-package com.example.notification.service.restfulapi;
+package com.example.notificationservice.restfulapi.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

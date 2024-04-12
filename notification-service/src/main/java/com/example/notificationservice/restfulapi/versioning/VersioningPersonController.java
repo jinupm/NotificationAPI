@@ -1,4 +1,4 @@
-package com.example.notification.service.restfulapi.versioning;
+package com.example.notificationservice.restfulapi.versioning;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
